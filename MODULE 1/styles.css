@@ -1,0 +1,571 @@
+/* ===================================
+   GOOGLE FONT
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================
+   UNIVERSAL SELECTOR
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===================================
+   BODY STYLING
+=================================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar{
+    background:linear-gradient(
+        90deg,
+        #0f172a,
+        #1e293b
+    ) !important;
+}
+
+.navbar-brand{
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#fbbf24 !important;
+}
+
+/* ===================================
+   HERO SECTION
+=================================== */
+
+#welcomeBanner{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+    );
+
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#welcomeBanner h1{
+    font-weight:700;
+}
+
+.highlight{
+
+    display:inline-block;
+
+    background:rgba(
+        255,
+        255,
+        255,
+        0.2
+    );
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    margin-top:15px;
+}
+
+#loader {
+    display: none;
+}
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+    z-index:999;
+}
+
+#topBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+/* ===================================
+   SECTION TITLE
+=================================== */
+
+.sectionTitle{
+
+    position:relative;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+    color:#1e293b;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+}
+
+.sectionTitle::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    background:#2563eb;
+
+    margin:10px auto;
+}
+
+/* ===================================
+   CARDS
+=================================== */
+
+.eventCard{
+
+    transition:0.4s;
+
+    border:none;
+
+    overflow:hidden;
+
+    border-radius:15px;
+}
+
+.eventCard:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0px 10px 25px
+    rgba(0,0,0,0.2);
+}
+
+.card-body h5{
+
+    font-weight:600;
+
+    color:#1e293b;
+}
+
+.info-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===================================
+   GALLERY IMAGES
+=================================== */
+
+.galleryImage{
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:0.4s;
+}
+
+.galleryImage:hover{
+
+    transform:scale(1.05);
+}
+
+/* ===================================
+   FORM SECTION
+=================================== */
+
+form{
+
+    background:white;
+
+    border-radius:15px;
+}
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+    0 0 10px
+    rgba(37,99,235,0.3);
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:2px solid #2563eb;
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+.btn{
+
+    border-radius:30px;
+
+    font-weight:600;
+}
+
+.btn-success{
+
+    background:#16a34a;
+
+    border:none;
+}
+
+.btn-success:hover{
+
+    background:#15803d;
+}
+
+/* ===================================
+   INFO CARD
+=================================== */
+
+.card{
+
+    border-radius:15px;
+}
+
+/* ===================================
+   LISTS
+=================================== */
+
+ul{
+
+    list-style-position:inside;
+}
+
+li{
+
+    padding:4px;
+}
+
+/* ===================================
+   VIDEO
+=================================== */
+
+video{
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px
+    rgba(0,0,0,0.2);
+}
+
+/* ===================================
+   LOCATION CARD
+=================================== */
+
+#location{
+
+    font-size:18px;
+
+    color:#2563eb;
+}
+
+/* ===================================
+   NEWS MULTI COLUMN
+=================================== */
+
+.newsColumn{
+
+    column-count:2;
+
+    column-gap:30px;
+
+    column-rule:1px solid gray;
+
+    text-align:justify;
+}
+
+/* ===================================
+   TABLE STYLING
+=================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+th,
+td{
+
+    padding:12px;
+
+    text-align:center;
+}
+
+tr:nth-child(even){
+
+    background:#f8fafc;
+}
+
+/* ===================================
+   ACCORDION
+=================================== */
+
+.accordion-button{
+
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#dbeafe;
+
+    color:#1e3a8a;
+}
+
+/* ===================================
+   DASHBOARD CARDS
+=================================== */
+
+.bg-primary,
+.bg-success,
+.bg-warning,
+.bg-danger{
+
+    border-radius:15px;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+
+    background:#0f172a;
+}
+
+footer i{
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+footer i:hover{
+
+    color:#fbbf24;
+}
+
+/* ===================================
+   LINK STATES
+=================================== */
+
+a:link{
+
+    text-decoration:none;
+}
+
+a:hover{
+
+    text-decoration:none;
+}
+
+a:active{
+
+    opacity:0.8;
+}
+
+a:visited{
+
+    text-decoration:none;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media(max-width:768px){
+
+    #welcomeBanner{
+
+        min-height:50vh;
+
+        padding:30px;
+    }
+
+    #welcomeBanner h1{
+
+        font-size:2rem;
+    }
+
+    .galleryImage{
+
+        height:200px;
+    }
+
+    .newsColumn{
+
+        column-count:1;
+    }
+
+    .sectionTitle{
+
+        font-size:1.4rem;
+    }
+
+    footer{
+
+        text-align:center;
+    }
+}
+
+/* ===================================
+   SMALL MOBILE
+=================================== */
+
+@media(max-width:576px){
+
+    .navbar-brand{
+
+        font-size:1rem;
+    }
+
+    .galleryImage{
+
+        height:180px;
+    }
+
+    .btn{
+
+        width:100%;
+    }
+}
+
+/* ===================================
+   COMMUNITY HIGHLIGHTS HOVER EFFECTS
+=================================== */
+
+/* Dashboard cards hover effect */
+.dashboard-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dashboard-card:hover h3 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Specific card hover styles */
+.bg-primary.dashboard-card:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+}
+
+.bg-success.dashboard-card:hover {
+    background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
+.bg-warning.dashboard-card:hover {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+}
+
+.bg-danger.dashboard-card:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+}
+
+/* Card inner content animation */
+.bg-primary.dashboard-card .card-body,
+.bg-success.dashboard-card .card-body,
+.bg-warning.dashboard-card .card-body,
+.bg-danger.dashboard-card .card-body {
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover .card-body h3 {
+    animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
