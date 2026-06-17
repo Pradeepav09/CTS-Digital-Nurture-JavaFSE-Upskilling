@@ -111,7 +111,7 @@ The Community Event Portal enables users to:
 ---
 
 ## Project Structure
-
+```
 CTS-Project/
 │
 ├── Module 1 - Frontend Development
@@ -178,7 +178,7 @@ CTS-Project/
 │   └── VirtualThreadsExample.java
 │
 └── README.md
-
+```
 ---
 
 ## Learning Outcomes
